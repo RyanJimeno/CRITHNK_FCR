@@ -40,22 +40,15 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-.nav__right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+li {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 a {
@@ -188,7 +181,8 @@ img {
   text-align: center;
   letter-spacing: -2px;
   border-radius: 50px;
-  background-color: #78aff8;
+  background-color: #57aeff;
+  border: 2px black solid;
   padding: .5em 1em;
   margin-top: 1em;
   -ms-flex-item-align: center;
@@ -201,5 +195,71 @@ img {
 .articlecta--ctabutton:hover {
   background-color: #ffce48;
   text-decoration: none;
+}
+
+footer {
+  font-weight: 300;
+  font-size: .8rem;
+  letter-spacing: -1px;
+  margin: 0 auto;
+  text-align: right;
+}
+
+.gridcontainer {
+  margin: 5vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  row-gap: 10px;
+  grid-auto-rows: auto;
+  grid-auto-flow: row;
+}
+
+.gridcontainer .article_title {
+  font-size: 2.4rem;
+  letter-spacing: -3px;
+  line-height: 1em;
+  padding: 13px 15px 15px 15px;
+  border-radius: 14px;
+  border: 1px solid black;
+  background-color: #f1f1f1;
+  position: relative;
+}
+
+.gridcontainer .article_subtitle {
+  font-size: 1.6rem;
+  letter-spacing: -2px;
+  line-height: -9em;
+  padding-top: 10px;
+  padding-bottom: 6vh;
+}
+
+.article_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-size: .8em;
+  font-weight: 700;
+  letter-spacing: -2px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  padding: .3em .4em .3em .4em;
+}
+
+.article_link:hover {
+  color: #8f4f00;
+  text-decoration: underline;
 }
 /*# sourceMappingURL=style.css.map */
