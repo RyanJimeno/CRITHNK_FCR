@@ -1,0 +1,10 @@
+/* @font-face {
+    font-family: 'Garnett';
+    src:  url('Garnett Black.ttf') format('ttf'),
+    src:  url('Garnett Light.ttf') format('ttf'),
+    src:  url('Garnett Medium.ttf') format('ttf'),
+    src:  url('Garnett Regular.ttf') format('ttf'),
+    src:  url('Garnett Semibold.ttf') format('ttf'),
+  } */
+
+  @import url('https://fonts.googleapis.com/css2&family=Inter:wght@300;500;800&family=Space+Grotesk:wght@300;500;700&display=swap');
