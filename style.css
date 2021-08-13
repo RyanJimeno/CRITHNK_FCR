@@ -188,7 +188,7 @@ img {
   text-align: center;
   letter-spacing: -2px;
   border-radius: 50px;
-  background-color: #67a9ff;
+  background-color: #78aff8;
   padding: .5em 1em;
   margin-top: 1em;
   -ms-flex-item-align: center;
@@ -199,7 +199,7 @@ img {
 }
 
 .articlecta--ctabutton:hover {
-  background-color: #a1caff;
+  background-color: #ffce48;
   text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
